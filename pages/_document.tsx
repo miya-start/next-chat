@@ -8,18 +8,15 @@ const cspHashOf = (text: string) => {
 }
 export default class MyDocument extends Document {
   render() {
-    let csp = `default-src 'self'; script-src 'self' ${cspHashOf(
-      NextScript.getInlineScriptSource(this.props)
-    )}`
+    const nonce = cspHashOf(NextScript.getInlineScriptSource(this.props))
+    let csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'`
     if (process.env.NODE_ENV !== 'production') {
-      csp = `style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self' ${cspHashOf(
-        NextScript.getInlineScriptSource(this.props)
-      )}`
+      csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; script-src 'unsafe-eval' 'self'`
     }
 
     return (
       <Html>
-        <Head>
+        <Head nonce={nonce}>
           <meta httpEquiv="Content-Security-Policy" content={csp} />
         </Head>
         <body>
