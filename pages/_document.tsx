@@ -2,9 +2,10 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
   render() {
-    let csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:`
+    let csp =
+      "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
     if (process.env.NODE_ENV !== 'production') {
-      csp += `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' 'unsafe-eval'`
+      csp += "; script-src 'self' 'unsafe-eval'"
     }
 
     return (
