@@ -2,7 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { PuzzleIcon } from '@heroicons/react/solid'
+import { PuzzleIcon, ColorSwatchIcon } from '@heroicons/react/solid'
+import { PlusIcon } from '@heroicons/react/outline'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,28 @@ const Home: NextPage = () => {
             <li>
               <a href="#" aria-label="ホーム">
                 <PuzzleIcon className="h-8 w-8 mx-auto rounded-full text-gray-200"></PuzzleIcon>
+              </a>
+            </li>
+            <li className="mx-4 mt-3 border-b border-gray-700"></li>
+            <li className="mt-3">
+              <a href="#">
+                <ColorSwatchIcon className="h-12 w-12 mx-auto rounded-full text-red-400"></ColorSwatchIcon>
+              </a>
+            </li>
+            <li className="mt-3">
+              <a href="#">
+                <Image
+                  src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
+                  alt="laravel"
+                  width={48}
+                  height={48}
+                  className="rounded-full mx-auto"
+                />
+              </a>
+            </li>
+            <li className="mt-3">
+              <a href="#" className="w-12 h-12 bg-gray-800">
+                <PlusIcon className="h-8 w-8 mx-auto rounded-full text-teal-500"></PlusIcon>
               </a>
             </li>
           </ul>
