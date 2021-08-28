@@ -9,9 +9,9 @@ const cspHashOf = (text: string) => {
 export default class MyDocument extends Document {
   render() {
     const nonce = cspHashOf(NextScript.getInlineScriptSource(this.props))
-    let csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'`
+    let csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:`
     if (process.env.NODE_ENV !== 'production') {
-      csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; script-src 'unsafe-eval' 'self'`
+      csp = `default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' 'unsafe-eval'`
     }
 
     return (
