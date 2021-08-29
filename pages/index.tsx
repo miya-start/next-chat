@@ -83,9 +83,9 @@ const Home: NextPage = () => {
         </div>
       </nav>
       <div className="flex flex-col min-h-screen h-screen">
-        <section className="bg-red-500 flex" aria-label="チャンネルのヘッダー">
-          <div className="bg-red-300 w-56 flex-none">Tailwind CSS</div>
-          <div>Rest of top bar</div>
+        <section className="flex" aria-label="チャンネルのヘッダー">
+          <div className="flex-none w-56 bg-gray-800">Tailwind CSS</div>
+          <div className="flex-1 bg-gray-750">Rest of top bar</div>
         </section>
         <div className="flex-1 bg-blue-500 flex overflow-y-hidden">
           <aside className="bg-green-300 w-56 flex-none flex flex-col justify-between">
