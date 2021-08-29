@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PuzzleIcon, ColorSwatchIcon } from '@heroicons/react/solid'
-import { PlusIcon } from '@heroicons/react/outline'
+import { DownloadIcon, PlusIcon, SearchIcon } from '@heroicons/react/outline'
 
 const Home: NextPage = () => {
   return (
@@ -16,30 +16,67 @@ const Home: NextPage = () => {
         <div className="overflow-y-auto">
           <ul className="text-center">
             <li>
-              <a href="#" aria-label="ホーム">
-                <PuzzleIcon className="h-8 w-8 mx-auto rounded-full text-gray-200"></PuzzleIcon>
+              <a
+                href="#"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-gray-200 hover:text-white bg-gray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
+                aria-label="ホーム"
+              >
+                <PuzzleIcon className="h-8 w-8 mx-auto rounded-full"></PuzzleIcon>
               </a>
             </li>
-            <li className="mx-4 mt-3 border-b border-gray-700"></li>
+          </ul>
+          <hr className="mx-4 mt-3 border-b border-gray-700"></hr>
+          <ul aria-label="サーバー">
             <li className="mt-3">
-              <a href="#">
+              <a href="#" aria-label="テストサーバー１">
                 <ColorSwatchIcon className="h-12 w-12 mx-auto rounded-full text-red-400"></ColorSwatchIcon>
               </a>
             </li>
             <li className="mt-3">
-              <a href="#">
+              <a
+                className="flex justify-center items-center"
+                href="#"
+                aria-label="テストサーバー２"
+              >
                 <Image
+                  className="rounded-full"
                   src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
                   alt="laravel"
                   width={48}
                   height={48}
-                  className="rounded-full mx-auto"
                 />
               </a>
             </li>
+          </ul>
+          <ul>
             <li className="mt-3">
-              <a href="#" className="w-12 h-12 bg-gray-800">
-                <PlusIcon className="h-8 w-8 mx-auto rounded-full text-teal-500"></PlusIcon>
+              <a
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                href="#"
+                aria-label="サーバーを追加"
+              >
+                <PlusIcon className="w-6 h-6"></PlusIcon>
+              </a>
+            </li>
+            <li className="mt-3">
+              <a
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                href="#"
+                aria-label="公開サーバーを探す"
+              >
+                <SearchIcon className="w-6 h-6"></SearchIcon>
+              </a>
+            </li>
+          </ul>
+          <hr className="mx-4 mt-3 border-b border-gray-700"></hr>
+          <ul>
+            <li className="mt-3">
+              <a
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                href="#"
+                aria-label="アプリをダウンロード"
+              >
+                <DownloadIcon className="w-6 h-6"></DownloadIcon>
               </a>
             </li>
           </ul>
