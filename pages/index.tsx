@@ -2,7 +2,15 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { PuzzleIcon, ColorSwatchIcon } from '@heroicons/react/solid'
+import {
+  BellIcon,
+  ChevronDownIcon,
+  ColorSwatchIcon,
+  InboxIcon,
+  PuzzleIcon,
+  QuestionMarkCircleIcon,
+  UsersIcon,
+} from '@heroicons/react/solid'
 import { DownloadIcon, PlusIcon, SearchIcon } from '@heroicons/react/outline'
 
 const Home: NextPage = () => {
@@ -21,7 +29,7 @@ const Home: NextPage = () => {
                 className="flex justify-center items-center mx-auto w-12 h-12 text-gray-200 hover:text-white bg-gray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
                 aria-label="ホーム"
               >
-                <PuzzleIcon className="h-8 w-8 mx-auto rounded-full"></PuzzleIcon>
+                <PuzzleIcon className="h-8 w-8 mx-auto rounded-full" />
               </a>
             </li>
           </ul>
@@ -29,7 +37,7 @@ const Home: NextPage = () => {
           <ul aria-label="サーバー">
             <li className="mt-3">
               <a href="#" aria-label="テストサーバー１">
-                <ColorSwatchIcon className="h-12 w-12 mx-auto rounded-full text-red-400"></ColorSwatchIcon>
+                <ColorSwatchIcon className="h-12 w-12 mx-auto rounded-full text-red-400" />
               </a>
             </li>
             <li className="mt-3">
@@ -55,7 +63,7 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="サーバーを追加"
               >
-                <PlusIcon className="w-6 h-6"></PlusIcon>
+                <PlusIcon className="w-6 h-6" />
               </a>
             </li>
             <li className="mt-3">
@@ -64,7 +72,7 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="公開サーバーを探す"
               >
-                <SearchIcon className="w-6 h-6"></SearchIcon>
+                <SearchIcon className="w-6 h-6" />
               </a>
             </li>
           </ul>
@@ -76,16 +84,43 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="アプリをダウンロード"
               >
-                <DownloadIcon className="w-6 h-6"></DownloadIcon>
+                <DownloadIcon className="w-6 h-6" />
               </a>
             </li>
           </ul>
         </div>
       </nav>
       <div className="flex flex-col min-h-screen h-screen">
-        <section className="flex" aria-label="チャンネルのヘッダー">
-          <div className="flex-none w-56 bg-gray-800">Tailwind CSS</div>
-          <div className="flex-1 bg-gray-750">Rest of top bar</div>
+        <section className="flex text-white" aria-label="チャンネルのヘッダー">
+          <div className="flex-none flex justify-between items-center w-56 bg-gray-800">
+            <div>Tailwind CSS</div>
+            <span>
+              <ChevronDownIcon className="h-5 w-5" />
+            </span>
+          </div>
+          <div className="flex-1 flex justify-between items-center px-4 bg-gray-750">
+            <div className="flex items-center">
+              <div className="text-2xl text-gray-500">#</div>
+              <div className="ml-2 text-sm">general</div>
+              <div className="pl-3 ml-3 text-xs text-gray-400 border-l border-gray-400 ">
+                general discussion of Tailwind CSS
+              </div>
+            </div>
+            <div className="flex items-center">
+              <div className="ml-4">a</div>
+              <div className="ml-4">
+                <svg
+                  className="fill-current text-gray-300 transform rotate-45"
+                  height={24}
+                  width={24}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M11 12h6v-1l-3-1V2l3-1V0H3v1l3 1v8l-3 1v1h6v7l1 1 1-1v-7z" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </section>
         <div className="flex-1 bg-blue-500 flex overflow-y-hidden">
           <aside className="bg-green-300 w-56 flex-none flex flex-col justify-between">
