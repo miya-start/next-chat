@@ -12,6 +12,7 @@ import {
   UsersIcon,
 } from '@heroicons/react/solid'
 import { DownloadIcon, PlusIcon, SearchIcon } from '@heroicons/react/outline'
+import { IconPin } from '@tabler/icons'
 
 const Home: NextPage = () => {
   return (
@@ -106,19 +107,25 @@ const Home: NextPage = () => {
                 general discussion of Tailwind CSS
               </div>
             </div>
-            <div className="flex items-center">
-              <div className="ml-4">a</div>
-              <div className="ml-4">
-                <svg
-                  className="fill-current text-gray-300 transform rotate-45"
-                  height={24}
-                  width={24}
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M11 12h6v-1l-3-1V2l3-1V0H3v1l3 1v8l-3 1v1h6v7l1 1 1-1v-7z" />
-                </svg>
-              </div>
+            <div className="flex items-center text-gray-300">
+              <button className="ml-4">
+                <BellIcon width={24} height={24} />
+              </button>
+              <button className="ml-4">
+                <IconPin className="fill-current" size={26} />
+              </button>
+              <button className="ml-4 text-white">
+                <UsersIcon width={24} height={24} />
+              </button>
+              <nav role="search" className="ml-4">
+                a
+              </nav>
+              <button className="ml-4">
+                <DownloadIcon width={24} height={24} />
+              </button>
+              <button className="ml-4">
+                <QuestionMarkCircleIcon width={24} height={24} />
+              </button>
             </div>
           </div>
         </section>
