@@ -95,13 +95,13 @@ const Home: NextPage = () => {
           className="flex h-12 text-white"
           aria-label="チャンネルのヘッダー"
         >
-          <div className="flex-none flex justify-between items-center w-56 bg-gray-800">
+          <div className="flex-none flex justify-between items-center w-56 bg-gray-800 border-b border-gray-900">
             <div>Tailwind CSS</div>
             <span>
               <ChevronDownIcon className="h-5 w-5" />
             </span>
           </div>
-          <div className="flex-1 flex justify-between items-center px-4 bg-gray-750">
+          <div className="flex-1 flex justify-between items-center px-4 bg-gray-750 border-b border-gray-900">
             <div className="flex items-center">
               <div className="text-2xl text-gray-500">#</div>
               <div className="ml-2 text-sm">general</div>
@@ -156,8 +156,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        <div className="flex-1 bg-blue-500 flex overflow-y-hidden">
-          <aside className="bg-green-300 w-56 flex-none flex flex-col justify-between">
+        <div className="flex-1 flex overflow-y-hidden">
+          <aside className="bg-gray-800 w-56 flex-none flex flex-col justify-between">
             <div className="overflow-y-auto">
               Hashtag sidebar
               親譲りの無鉄砲で小供の時から損ばかりして居る。小学校に居る時分学校の二階から飛び降りて一週間程腰を抜かした事がある。なぜそんな無闇(むやみ)をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出して居たら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃(はや)したからである。小使に負(お)ぶさって帰って来た時、おやじが大きな眼をして二階位から飛び降りて腰を抜かす奴があるかと云ったから、此次(このつぎ)は抜かさずに飛んで見せますと答えた。
@@ -166,9 +166,9 @@ const Home: NextPage = () => {
             </div>
             <div className="bg-gray-500">Bottom</div>
           </aside>
-          <div className="flex-1 bg-green-500 flex justify-between">
+          <div className="flex-1 flex justify-between">
             <main
-              className="flex-1 bg-indigo-300 flex flex-col justify-between"
+              className="flex-1 bg-gray-750 flex flex-col justify-between"
               aria-label="一般 (チャンネル)"
             >
               <div className="overflow-y-auto">
