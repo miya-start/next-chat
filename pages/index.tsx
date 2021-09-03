@@ -165,46 +165,56 @@ const Home: NextPage = () => {
           </div>
         </section>
         <div className="flex-1 flex overflow-y-hidden">
-          <aside className="bg-trueGray-800 w-56 flex-none flex flex-col justify-between">
+          <aside className="flex-none flex flex-col justify-between w-56 bg-trueGray-800">
             <div className="overflow-y-auto">
               <ul className="px-2 py-3">
-                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
+                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
-                    <span className="ml-2">welcome</span>
+                    <span className="ml-2 group-hover:text-trueGray-200">
+                      welcome
+                    </span>
                   </a>
                 </li>
-                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
+                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
-                    <span className="ml-2">faq</span>
+                    <span className="ml-2 group-hover:text-trueGray-200">
+                      faq
+                    </span>
                   </a>
                 </li>
               </ul>
 
-              <button className="flex items-center text-trueGray-400 hever:text-trueGray-200">
+              <button className="group flex items-center w-full text-trueGray-400 hover:text-trueGray-200">
                 <ChevronDownIcon width={20} height={20} />
                 <h3 className="text-xs font-semibold tracking-wide uppercase">
                   Tailwind CSS
                 </h3>
               </button>
               <ul className="px-2 py-3">
-                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
+                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
-                    <span className="ml-2">general</span>
+                    <span className="ml-2 group-hover:text-trueGray-200">
+                      general
+                    </span>
                   </a>
                 </li>
-                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
+                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
-                    <span className="ml-2">core-dev</span>
+                    <span className="ml-2 group-hover:text-trueGray-200">
+                      core-dev
+                    </span>
                   </a>
                 </li>
-                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
+                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
-                    <span className="ml-2">course</span>
+                    <span className="ml-2 group-hover:text-trueGray-200">
+                      course
+                    </span>
                   </a>
                 </li>
               </ul>
