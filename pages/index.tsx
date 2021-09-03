@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
-  BellIcon,
   ChevronDownIcon,
   ColorSwatchIcon,
   InboxIcon,
@@ -12,7 +11,7 @@ import {
   UsersIcon,
 } from '@heroicons/react/solid'
 import { DownloadIcon, PlusIcon, SearchIcon } from '@heroicons/react/outline'
-import { IconPin } from '@tabler/icons'
+import { IconBellOff, IconBellRinging, IconPin } from '@tabler/icons'
 
 const Home: NextPage = () => {
   return (
@@ -92,7 +91,10 @@ const Home: NextPage = () => {
         </div>
       </nav>
       <div className="flex flex-col min-h-screen h-screen">
-        <section className="flex text-white" aria-label="チャンネルのヘッダー">
+        <section
+          className="flex h-12 text-white"
+          aria-label="チャンネルのヘッダー"
+        >
           <div className="flex-none flex justify-between items-center w-56 bg-gray-800">
             <div>Tailwind CSS</div>
             <span>
@@ -108,24 +110,49 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="flex items-center text-gray-300">
-              <button className="ml-4">
-                <BellIcon width={24} height={24} />
+              <button
+                className="ml-4"
+                aria-label={`チャンネル${'一般'}をミュートする`}
+                aria-pressed="false"
+              >
+                <IconBellRinging fill="currentColor" size={24} />
               </button>
-              <button className="ml-4">
-                <IconPin className="fill-current" size={26} />
+              <button
+                className="ml-4"
+                aria-label="ピン留めされたメッセージ"
+                aria-pressed="false"
+              >
+                <IconPin fill="currentColor" size={26} />
               </button>
-              <button className="ml-4 text-white">
+              <button
+                className="ml-4 text-white"
+                aria-label="メンバーリスト"
+                aria-pressed="true"
+              >
                 <UsersIcon width={24} height={24} />
               </button>
-              <nav role="search" className="ml-4">
-                a
-              </nav>
-              <button className="ml-4">
-                <DownloadIcon width={24} height={24} />
+              <form className="relative ml-4" role="search">
+                <input
+                  className="px-2 py-1 text-sm text-gray-200 bg-gray-900 rounded "
+                  type="search"
+                  placeholder="検索"
+                  size={20}
+                  aria-label="検索"
+                />
+                <span className="absolute top-1 right-0 mr-1">
+                  <SearchIcon width={20} height={20} />
+                </span>
+              </form>
+              <button
+                className="ml-4"
+                aria-label="受信ボックス"
+                aria-pressed="false"
+              >
+                <InboxIcon width={24} height={24} />
               </button>
-              <button className="ml-4">
+              <a className="ml-4" href="#" aria-label="ヘルプ">
                 <QuestionMarkCircleIcon width={24} height={24} />
-              </button>
+              </a>
             </div>
           </div>
         </section>
