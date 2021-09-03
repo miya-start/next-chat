@@ -20,13 +20,13 @@ const Home: NextPage = () => {
         <title>メインページ</title>
       </Head>
 
-      <nav className="flex-none flex flex-col min-h-screen h-screen w-20 p-2 bg-gray-900">
+      <nav className="flex-none flex flex-col min-h-screen h-screen w-20 p-2 bg-trueGray-900">
         <div className="overflow-y-auto text-sm">
           <ul className="text-center">
             <li>
               <a
                 href="#"
-                className="flex justify-center items-center mx-auto w-12 h-12 text-gray-200 hover:text-white bg-gray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 hover:text-white bg-trueGray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
                 aria-label="ホーム"
               >
                 <PuzzleIcon
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               </a>
             </li>
           </ul>
-          <hr className="mx-4 mt-3 border-b border-gray-700"></hr>
+          <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
           <ul aria-label="サーバー">
             <li className="mt-3">
               <a href="#" aria-label="テストサーバー１">
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
           <ul>
             <li className="mt-3">
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
                 href="#"
                 aria-label="サーバーを追加"
               >
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
             </li>
             <li className="mt-3">
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
                 href="#"
                 aria-label="公開サーバーを探す"
               >
@@ -84,11 +84,11 @@ const Home: NextPage = () => {
               </a>
             </li>
           </ul>
-          <hr className="mx-4 mt-3 border-b border-gray-700"></hr>
+          <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
           <ul>
             <li className="mt-3">
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-gray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
                 href="#"
                 aria-label="アプリをダウンロード"
               >
@@ -103,21 +103,21 @@ const Home: NextPage = () => {
           className="flex h-12 text-white"
           aria-label="チャンネルのヘッダー"
         >
-          <div className="flex-none flex justify-between items-center w-56 px-3 py-2 bg-gray-800 border-b border-gray-900">
+          <div className="flex-none flex justify-between items-center w-56 px-3 py-2 bg-trueGray-800 border-b border-trueGray-900">
             <div>Tailwind CSS</div>
             <span>
               <ChevronDownIcon width={20} height={20} />
             </span>
           </div>
-          <div className="flex-1 flex justify-between items-center px-4 bg-gray-750 border-b border-gray-900">
+          <div className="flex-1 flex justify-between items-center px-4 bg-trueGray-750 border-b border-trueGray-900">
             <div className="flex items-center">
-              <div className="text-2xl text-gray-500">#</div>
+              <div className="text-2xl text-trueGray-500">#</div>
               <div className="ml-2 text-sm">general</div>
-              <div className="pl-3 ml-3 text-xs text-gray-400 border-l border-gray-400 ">
+              <div className="pl-3 ml-3 text-xs text-trueGray-400 border-l border-trueGray-400 ">
                 general discussion of Tailwind CSS
               </div>
             </div>
-            <div className="flex items-center text-gray-300">
+            <div className="flex items-center text-trueGray-300">
               <button
                 className="ml-4"
                 aria-label={`チャンネル${'一般'}をミュートする`}
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
               </button>
               <form className="relative ml-4" role="search">
                 <input
-                  className="px-2 py-1 text-sm text-gray-200 bg-gray-900 rounded "
+                  className="px-2 py-1 text-sm text-trueGray-200 bg-trueGray-900 rounded "
                   type="search"
                   placeholder="検索"
                   size={20}
@@ -165,16 +165,16 @@ const Home: NextPage = () => {
           </div>
         </section>
         <div className="flex-1 flex overflow-y-hidden">
-          <aside className="bg-gray-800 w-56 flex-none flex flex-col justify-between">
+          <aside className="bg-trueGray-800 w-56 flex-none flex flex-col justify-between">
             <div className="overflow-y-auto">
               <ul className="px-2 py-3">
-                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
                     <span className="ml-2">welcome</span>
                   </a>
                 </li>
-                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
                     <span className="ml-2">faq</span>
@@ -182,26 +182,26 @@ const Home: NextPage = () => {
                 </li>
               </ul>
 
-              <button className="flex items-center text-gray-500 hever:text-gray-200">
+              <button className="flex items-center text-trueGray-400 hever:text-trueGray-200">
                 <ChevronDownIcon width={20} height={20} />
                 <h3 className="text-xs font-semibold tracking-wide uppercase">
                   Tailwind CSS
                 </h3>
               </button>
               <ul className="px-2 py-3">
-                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
                     <span className="ml-2">general</span>
                   </a>
                 </li>
-                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
                     <span className="ml-2">core-dev</span>
                   </a>
                 </li>
-                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                <li className="px-2 text-trueGray-400 hover:text-trueGray-200 hover:bg-trueGray-700">
                   <a href="#" className="flex items-center">
                     <span className="text-xl">#</span>
                     <span className="ml-2">course</span>
@@ -209,11 +209,11 @@ const Home: NextPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="bg-gray-500">Bottom</div>
+            <div className="bg-trueGray-500">Bottom</div>
           </aside>
           <div className="flex-1 flex justify-between">
             <main
-              className="flex-1 bg-gray-750 flex flex-col justify-between"
+              className="flex-1 bg-trueGray-750 flex flex-col justify-between"
               aria-label="一般 (チャンネル)"
             >
               <div className="overflow-y-auto">
@@ -367,7 +367,7 @@ const Home: NextPage = () => {
                 doloribus. Aut, cupiditate fugit alias ut quaerat eveniet natus
                 harum voluptatibus cum molestias earum obcaecati.
               </div>
-              <div className="bg-gray-700">Chat input here</div>
+              <div className="bg-trueGray-700">Chat input here</div>
             </main>
 
             <div className="bg-indigo-500 w-56 flex-none overflow-y-auto">
