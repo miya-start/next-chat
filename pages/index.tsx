@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
 
       <nav className="flex-none flex flex-col min-h-screen h-screen w-20 p-2 bg-gray-900">
-        <div className="overflow-y-auto">
+        <div className="overflow-y-auto text-sm">
           <ul className="text-center">
             <li>
               <a
@@ -29,7 +29,11 @@ const Home: NextPage = () => {
                 className="flex justify-center items-center mx-auto w-12 h-12 text-gray-200 hover:text-white bg-gray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
                 aria-label="ホーム"
               >
-                <PuzzleIcon className="h-8 w-8 mx-auto rounded-full" />
+                <PuzzleIcon
+                  className="mx-auto rounded-full"
+                  width={32}
+                  height={32}
+                />
               </a>
             </li>
           </ul>
@@ -37,7 +41,11 @@ const Home: NextPage = () => {
           <ul aria-label="サーバー">
             <li className="mt-3">
               <a href="#" aria-label="テストサーバー１">
-                <ColorSwatchIcon className="h-12 w-12 mx-auto rounded-full text-red-400" />
+                <ColorSwatchIcon
+                  className="mx-auto rounded-full text-red-400"
+                  width={48}
+                  height={48}
+                />
               </a>
             </li>
             <li className="mt-3">
@@ -63,7 +71,7 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="サーバーを追加"
               >
-                <PlusIcon className="w-6 h-6" />
+                <PlusIcon width={24} height={24} />
               </a>
             </li>
             <li className="mt-3">
@@ -72,7 +80,7 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="公開サーバーを探す"
               >
-                <SearchIcon className="w-6 h-6" />
+                <SearchIcon width={24} height={24} />
               </a>
             </li>
           </ul>
@@ -84,7 +92,7 @@ const Home: NextPage = () => {
                 href="#"
                 aria-label="アプリをダウンロード"
               >
-                <DownloadIcon className="w-6 h-6" />
+                <DownloadIcon width={24} height={24} />
               </a>
             </li>
           </ul>
@@ -95,10 +103,10 @@ const Home: NextPage = () => {
           className="flex h-12 text-white"
           aria-label="チャンネルのヘッダー"
         >
-          <div className="flex-none flex justify-between items-center w-56 bg-gray-800 border-b border-gray-900">
+          <div className="flex-none flex justify-between items-center w-56 px-3 py-2 bg-gray-800 border-b border-gray-900">
             <div>Tailwind CSS</div>
             <span>
-              <ChevronDownIcon className="h-5 w-5" />
+              <ChevronDownIcon width={20} height={20} />
             </span>
           </div>
           <div className="flex-1 flex justify-between items-center px-4 bg-gray-750 border-b border-gray-900">
@@ -159,10 +167,47 @@ const Home: NextPage = () => {
         <div className="flex-1 flex overflow-y-hidden">
           <aside className="bg-gray-800 w-56 flex-none flex flex-col justify-between">
             <div className="overflow-y-auto">
-              Hashtag sidebar
-              親譲りの無鉄砲で小供の時から損ばかりして居る。小学校に居る時分学校の二階から飛び降りて一週間程腰を抜かした事がある。なぜそんな無闇(むやみ)をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出して居たら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃(はや)したからである。小使に負(お)ぶさって帰って来た時、おやじが大きな眼をして二階位から飛び降りて腰を抜かす奴があるかと云ったから、此次(このつぎ)は抜かさずに飛んで見せますと答えた。
-              　親類の者から西洋製のナイフを貰って奇麗な刃を日に翳(かざ)して、友達に見せて居たら、一人が光る事は光るが切れそうもないと云った。切れぬ事があるか、何でも切って見せると受け合った。そんなら君の指を切ってみろと注文したから、何だ指位此(この)通りだと右の手の親指の甲をはすに切り込んだ。幸(さいわい)ナイフが小さいのと、親指の骨が堅かったので、今だに親指は手に付いて居る。然し創痕(きずあと)は死ぬ迄消えぬ。
-              　庭を東へ二十歩に行き尽すと、南上がりに聊(いささ)か許(ばか)りの菜園があって、真中に栗の木が一本立って居る。是(こ)れは命より大事な栗だ。実の熟する時分は起き抜けに脊戸(せど)を出て落ちた奴を拾ってきて、学校で食う。菜園の西側が山城屋(やましろや)と云う質屋の庭続きで、
+              <ul className="px-2 py-3">
+                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                  <a href="#" className="flex items-center">
+                    <span className="text-xl">#</span>
+                    <span className="ml-2">welcome</span>
+                  </a>
+                </li>
+                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                  <a href="#" className="flex items-center">
+                    <span className="text-xl">#</span>
+                    <span className="ml-2">faq</span>
+                  </a>
+                </li>
+              </ul>
+
+              <button className="flex items-center text-gray-500 hever:text-gray-200">
+                <ChevronDownIcon width={20} height={20} />
+                <h3 className="text-xs font-semibold tracking-wide uppercase">
+                  Tailwind CSS
+                </h3>
+              </button>
+              <ul className="px-2 py-3">
+                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                  <a href="#" className="flex items-center">
+                    <span className="text-xl">#</span>
+                    <span className="ml-2">general</span>
+                  </a>
+                </li>
+                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                  <a href="#" className="flex items-center">
+                    <span className="text-xl">#</span>
+                    <span className="ml-2">core-dev</span>
+                  </a>
+                </li>
+                <li className="px-2 text-gray-500 hover:text-gray-200 hover:bg-gray-700">
+                  <a href="#" className="flex items-center">
+                    <span className="text-xl">#</span>
+                    <span className="ml-2">course</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="bg-gray-500">Bottom</div>
           </aside>
