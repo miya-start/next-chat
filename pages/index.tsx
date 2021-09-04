@@ -10,7 +10,12 @@ import {
   QuestionMarkCircleIcon,
   UsersIcon,
 } from '@heroicons/react/solid'
-import { DownloadIcon, PlusIcon, SearchIcon } from '@heroicons/react/outline'
+import {
+  DownloadIcon,
+  HashtagIcon,
+  PlusIcon,
+  SearchIcon,
+} from '@heroicons/react/outline'
 import { IconBellOff, IconBellRinging, IconPin } from '@tabler/icons'
 
 const Home: NextPage = () => {
@@ -167,57 +172,90 @@ const Home: NextPage = () => {
         <div className="flex-1 flex overflow-y-hidden">
           <aside className="flex-none flex flex-col justify-between w-56 bg-trueGray-800">
             <div className="overflow-y-auto">
-              <ul className="px-2 py-3">
-                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
-                  <a href="#" className="flex items-center">
-                    <span className="text-xl">#</span>
-                    <span className="ml-2 group-hover:text-trueGray-200">
-                      welcome
-                    </span>
-                  </a>
-                </li>
-                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
-                  <a href="#" className="flex items-center">
-                    <span className="text-xl">#</span>
-                    <span className="ml-2 group-hover:text-trueGray-200">
-                      faq
-                    </span>
-                  </a>
-                </li>
-              </ul>
+              <div className="mt-4 mb-5">
+                <button className="group flex items-center w-full mb-1 text-trueGray-400 hover:text-trueGray-200">
+                  <ChevronDownIcon width={20} height={20} />
+                  <h3 className="text-sm font-semibold tracking-wide uppercase">
+                    一般
+                  </h3>
+                </button>
+                <ul className="px-2">
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 group-hover:text-trueGray-200">
+                        welcome
+                      </span>
+                    </a>
+                  </li>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 group-hover:text-trueGray-200">
+                        faq
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-              <button className="group flex items-center w-full text-trueGray-400 hover:text-trueGray-200">
-                <ChevronDownIcon width={20} height={20} />
-                <h3 className="text-xs font-semibold tracking-wide uppercase">
-                  Tailwind CSS
-                </h3>
-              </button>
-              <ul className="px-2 py-3">
-                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
-                  <a href="#" className="flex items-center">
-                    <span className="text-xl">#</span>
-                    <span className="ml-2 group-hover:text-trueGray-200">
-                      general
-                    </span>
-                  </a>
-                </li>
-                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
-                  <a href="#" className="flex items-center">
-                    <span className="text-xl">#</span>
-                    <span className="ml-2 group-hover:text-trueGray-200">
-                      core-dev
-                    </span>
-                  </a>
-                </li>
-                <li className="group px-2 text-trueGray-400 hover:bg-trueGray-750">
-                  <a href="#" className="flex items-center">
-                    <span className="text-xl">#</span>
-                    <span className="ml-2 group-hover:text-trueGray-200">
-                      course
-                    </span>
-                  </a>
-                </li>
-              </ul>
+              <div className="mt-4 mb-5">
+                <button className="group flex items-center w-full mb-1 text-trueGray-400 hover:text-trueGray-200">
+                  <ChevronDownIcon width={20} height={20} />
+                  <h3 className="text-xs font-semibold tracking-wide uppercase">
+                    Tailwind CSS
+                  </h3>
+                </button>
+                <ul className="px-2">
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 group-hover:text-trueGray-200">
+                        general
+                      </span>
+                    </a>
+                  </li>
+                  <li className="group px-2 py-1 text-trueGray-400 bg-trueGray-700 rounded">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 text-trueGray-100">core-dev</span>
+                    </a>
+                  </li>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 group-hover:text-trueGray-200">
+                        course
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="bg-trueGray-500">Bottom</div>
           </aside>
