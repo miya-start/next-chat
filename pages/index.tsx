@@ -41,11 +41,11 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150"></span>
               </div>
               <a
                 href="#"
-                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-indigo-500 group-hover:rounded-2xl"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-indigo-500 group-hover:rounded-2xl"
                 aria-label="ホーム"
               >
                 <PuzzleIcon
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
               </div>
               <a
                 className="flex justify-center items-center"
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                 aria-label="テストサーバー1"
               >
                 <Image
-                  className="rounded-full transform-gpu transition-all ease-linear group-hover:rounded-2xl"
+                  className="rounded-full transition-all ease-linear group-hover:rounded-2xl"
                   src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
                   alt="ホーム"
                   width={48}
@@ -84,11 +84,11 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
               </div>
               <a href="#" aria-label="テストサーバー2">
                 <ColorSwatchIcon
-                  className="mx-auto text-yellow-500 rounded-full transform-gpu transition-all ease-linear group-hover:rounded-2xl"
+                  className="mx-auto text-yellow-500 rounded-full transition-all ease-linear group-hover:rounded-2xl"
                   width={48}
                   height={48}
                 />
@@ -122,10 +122,10 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
               </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="サーバーを追加"
               >
@@ -137,10 +137,10 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
               </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="公開サーバーを探す"
               >
@@ -155,10 +155,10 @@ const Home: NextPage = () => {
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
               >
-                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
               </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="アプリをダウンロード"
               >
