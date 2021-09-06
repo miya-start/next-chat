@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <title>メインページ</title>
       </Head>
 
-      <nav className="flex-none flex flex-col min-h-screen h-screen w-20 p-2 bg-trueGray-900">
+      <nav className="flex-none flex flex-col min-h-screen h-screen w-20 py-2 bg-trueGray-900">
         <div className="overflow-y-auto text-sm">
           <ul className="text-center">
             <li>
@@ -45,24 +45,45 @@ const Home: NextPage = () => {
           <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
           <ul aria-label="サーバー">
             <li className="mt-3">
-              <a href="#" aria-label="テストサーバー１">
-                <ColorSwatchIcon
-                  className="mx-auto rounded-full text-red-400"
+              <a
+                className="flex justify-center items-center"
+                href="#"
+                aria-label="テストサーバー1"
+              >
+                <Image
+                  className="rounded-full"
+                  src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
+                  alt="laravel"
                   width={48}
                   height={48}
                 />
               </a>
             </li>
             <li className="mt-3">
+              <a href="#" aria-label="テストサーバー2">
+                <ColorSwatchIcon
+                  className="mx-auto rounded-full text-yellow-500"
+                  width={48}
+                  height={48}
+                />
+              </a>
+            </li>
+            <li className="mt-3 relative">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-10 -ml-1 bg-white rounded"></span>
+              </div>
               <a
                 className="flex justify-center items-center"
                 href="#"
-                aria-label="テストサーバー２"
+                aria-label="テストサーバー3"
               >
                 <Image
                   className="rounded-full"
-                  src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
-                  alt="laravel"
+                  src="/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67.png"
+                  alt="JavaScript"
                   width={48}
                   height={48}
                 />
