@@ -328,7 +328,7 @@ const Home: NextPage = () => {
             >
               <div className="flex items-center">
                 <button>
-                  <div aria-label="miyashita、 オンライン">
+                  <section aria-label="miyashita、 オンライン">
                     <Image
                       className="rounded-full"
                       src="/crop.jpg"
@@ -336,7 +336,7 @@ const Home: NextPage = () => {
                       width={32}
                       height={32}
                     />
-                  </div>
+                  </section>
                 </button>
                 <div className="ml-2">
                   <div className="text-sm font-semibold text-white">
