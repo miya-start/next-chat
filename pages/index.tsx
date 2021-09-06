@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex">
       <Head>
-        <title>メインページ</title>
+        <title>チャットサービスのモックアップ</title>
       </Head>
 
       <nav className="flex-none flex flex-col min-h-screen h-screen w-20 py-2 bg-trueGray-900">
@@ -71,9 +71,9 @@ const Home: NextPage = () => {
                 aria-label="テストサーバー1"
               >
                 <Image
-                  className="rounded-full"
+                  className="rounded-full transform-gpu transition-all ease-linear group-hover:rounded-2xl"
                   src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
-                  alt="laravel"
+                  alt="ホーム"
                   width={48}
                   height={48}
                 />
@@ -88,13 +88,13 @@ const Home: NextPage = () => {
               </div>
               <a href="#" aria-label="テストサーバー2">
                 <ColorSwatchIcon
-                  className="mx-auto rounded-full text-yellow-500"
+                  className="mx-auto text-yellow-500 rounded-full transform-gpu transition-all ease-linear group-hover:rounded-2xl"
                   width={48}
                   height={48}
                 />
               </a>
             </li>
-            <li className="relative mt-3 cursor-pointer">
+            <li className="group relative mt-3 cursor-pointer">
               <div
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                 aria-label="テストサーバー3"
               >
                 <Image
-                  className="rounded-full"
+                  className="rounded-2xl"
                   src="/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67.png"
                   alt="JavaScript"
                   width={48}
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
           aria-label="チャンネルのヘッダー"
         >
           <div className="flex-none flex justify-between items-center w-56 px-3 py-2 bg-trueGray-800 border-b border-trueGray-900">
-            <div>Tailwind CSS</div>
+            <div>JavaScript</div>
             <span>
               <ChevronDownIcon width={20} height={20} />
             </span>
@@ -182,15 +182,15 @@ const Home: NextPage = () => {
           <div className="flex-1 flex justify-between items-center px-4 bg-trueGray-750 border-b border-trueGray-900">
             <div className="flex items-center">
               <div className="text-2xl text-trueGray-500">#</div>
-              <div className="ml-2 text-sm">general</div>
+              <div className="ml-2 text-sm">random</div>
               <div className="pl-3 ml-3 text-xs text-trueGray-400 border-l border-trueGray-400 ">
-                general discussion of Tailwind CSS
+                JavaScriptに関する雑談
               </div>
             </div>
             <div className="flex items-center text-trueGray-300">
               <button
                 className="ml-4"
-                aria-label={`チャンネル${'一般'}をミュートする`}
+                aria-label={`チャンネル${'random'}をミュートする`}
                 aria-pressed="false"
               >
                 <IconBellRinging fill="currentColor" size={24} />
@@ -240,8 +240,8 @@ const Home: NextPage = () => {
               <div className="mt-4 mb-5">
                 <button className="group flex items-center w-full mb-1 text-trueGray-400 hover:text-trueGray-200">
                   <ChevronDownIcon width={20} height={20} />
-                  <h3 className="text-sm font-semibold tracking-wide uppercase">
-                    一般
+                  <h3 className="text-xs font-semibold tracking-wide uppercase">
+                    general
                   </h3>
                 </button>
                 <ul className="px-2">
@@ -275,13 +275,33 @@ const Home: NextPage = () => {
               </div>
 
               <div className="mt-4 mb-5">
-                <button className="group flex items-center w-full mb-1 text-trueGray-400 hover:text-trueGray-200">
-                  <ChevronDownIcon width={20} height={20} />
-                  <h3 className="text-xs font-semibold tracking-wide uppercase">
-                    Tailwind CSS
-                  </h3>
-                </button>
+                <div className="group flex justify-between items-center pr-2 text-trueGray-400 cursor-pointer">
+                  <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
+                    <ChevronDownIcon width={16} height={16} />
+                    <h3 className="text-xs font-semibold tracking-wide uppercase">
+                      JavaScript
+                    </h3>
+                  </button>
+
+                  <button
+                    className="hover:text-trueGray-200"
+                    aria-label="チャンネルを作成"
+                  >
+                    <PlusIcon width={18} height={18} />
+                  </button>
+                </div>
                 <ul className="px-2">
+                  <li className="group px-2 py-1 text-trueGray-400 bg-trueGray-700 rounded">
+                    <a href="#" className="flex items-center">
+                      <HashtagIcon
+                        className="text-trueGray-500"
+                        width={24}
+                        height={24}
+                        aria-label="公開チャンネル"
+                      />
+                      <span className="ml-2 text-trueGray-100">random</span>
+                    </a>
+                  </li>
                   <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
                     <a href="#" className="flex items-center">
                       <HashtagIcon
@@ -291,21 +311,11 @@ const Home: NextPage = () => {
                         aria-label="公開チャンネル"
                       />
                       <span className="ml-2 group-hover:text-trueGray-200">
-                        general
+                        core-dev
                       </span>
                     </a>
                   </li>
-                  <li className="group px-2 py-1 text-trueGray-400 bg-trueGray-700 rounded">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 text-trueGray-100">core-dev</span>
-                    </a>
-                  </li>
+
                   <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
                     <a href="#" className="flex items-center">
                       <HashtagIcon
@@ -378,7 +388,7 @@ const Home: NextPage = () => {
           <div className="flex-1 flex justify-between">
             <main
               className="flex-1 bg-trueGray-750 flex flex-col justify-between"
-              aria-label="一般 (チャンネル)"
+              aria-label="random (チャンネル)"
             >
               <div className="overflow-y-auto">
                 Display chat contents Lorem ipsum dolor sit amet consectetur,
@@ -534,7 +544,7 @@ const Home: NextPage = () => {
               <div className="bg-trueGray-700">Chat input here</div>
             </main>
 
-            <div className="bg-indigo-500 w-56 flex-none overflow-y-auto">
+            <div className="bg-trueGray-800 w-56 flex-none overflow-y-auto">
               Users sidebar Lorem ipsum dolor, sit amet consectetur adipisicing
               elit. Officiis consectetur quod natus facere sapiente, maiores
               omnis, eaque nobis rerum nesciunt culpa odio nulla commodi
