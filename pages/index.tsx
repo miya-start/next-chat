@@ -36,10 +36,16 @@ const Home: NextPage = () => {
       <nav className="flex-none flex flex-col min-h-screen h-screen w-20 py-2 bg-trueGray-900">
         <div className="overflow-y-auto text-sm">
           <ul className="text-center">
-            <li>
+            <li className="group relative cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a
                 href="#"
-                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 hover:text-white bg-trueGray-800 hover:bg-indigo-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-indigo-500 group-hover:rounded-2xl"
                 aria-label="ホーム"
               >
                 <PuzzleIcon
@@ -52,7 +58,13 @@ const Home: NextPage = () => {
           </ul>
           <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
           <ul aria-label="サーバー">
-            <li className="mt-3">
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a
                 className="flex justify-center items-center"
                 href="#"
@@ -67,7 +79,13 @@ const Home: NextPage = () => {
                 />
               </a>
             </li>
-            <li className="mt-3">
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a href="#" aria-label="テストサーバー2">
                 <ColorSwatchIcon
                   className="mx-auto rounded-full text-yellow-500"
@@ -76,7 +94,7 @@ const Home: NextPage = () => {
                 />
               </a>
             </li>
-            <li className="mt-3 relative">
+            <li className="relative mt-3 cursor-pointer">
               <div
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
                 aria-hidden="true"
@@ -99,18 +117,30 @@ const Home: NextPage = () => {
             </li>
           </ul>
           <ul>
-            <li className="mt-3">
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="サーバーを追加"
               >
                 <PlusIcon width={24} height={24} />
               </a>
             </li>
-            <li className="mt-3">
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="公開サーバーを探す"
               >
@@ -120,9 +150,15 @@ const Home: NextPage = () => {
           </ul>
           <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
           <ul>
-            <li className="mt-3">
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transform transition group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
               <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 hover:text-white bg-trueGray-800 hover:bg-teal-500 rounded-full hover:rounded-2xl transition-all"
+                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transform-gpu transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
                 href="#"
                 aria-label="アプリをダウンロード"
               >
