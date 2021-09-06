@@ -10,6 +10,7 @@ import {
   MicrophoneIcon,
   PuzzleIcon,
   QuestionMarkCircleIcon,
+  UserAddIcon,
   UsersIcon,
 } from '@heroicons/react/solid'
 import {
@@ -180,36 +181,34 @@ const Home: NextPage = () => {
             </span>
           </div>
           <div className="flex-1 flex justify-between items-center px-4 bg-trueGray-750 border-b border-trueGray-900">
-            <div className="flex items-center">
+            <div className="flex items-center gap-x-2">
               <div className="text-2xl text-trueGray-500">#</div>
-              <div className="ml-2 text-sm">random</div>
-              <div className="pl-3 ml-3 text-xs text-trueGray-400 border-l border-trueGray-400 ">
+              <div className="text-sm">random</div>
+              <div className="pl-2 text-xs text-trueGray-400 border-l border-trueGray-400 ">
                 JavaScriptに関する雑談
               </div>
             </div>
-            <div className="flex items-center text-trueGray-300">
+            <div className="flex items-center gap-x-4 text-trueGray-300">
               <button
-                className="ml-4"
                 aria-label={`チャンネル${'random'}をミュートする`}
                 aria-pressed="false"
               >
                 <IconBellRinging fill="currentColor" size={24} />
               </button>
               <button
-                className="ml-4"
                 aria-label="ピン留めされたメッセージ"
                 aria-pressed="false"
               >
                 <IconPin fill="currentColor" size={26} />
               </button>
               <button
-                className="ml-4 text-white"
+                className="text-white"
                 aria-label="メンバーリスト"
                 aria-pressed="true"
               >
                 <UsersIcon width={24} height={24} />
               </button>
-              <form className="relative ml-4" role="search">
+              <form className="relative" role="search">
                 <input
                   className="w-36 px-2 py-1 text-sm text-trueGray-200 bg-trueGray-900 rounded transition-width focus:w-60 focus:outline-none"
                   type="search"
@@ -220,14 +219,10 @@ const Home: NextPage = () => {
                   <SearchIcon width={20} height={20} />
                 </span>
               </form>
-              <button
-                className="ml-4"
-                aria-label="受信ボックス"
-                aria-pressed="false"
-              >
+              <button aria-label="受信ボックス" aria-pressed="false">
                 <InboxIcon width={24} height={24} />
               </button>
-              <a className="ml-4" href="#" aria-label="ヘルプ">
+              <a href="#" aria-label="ヘルプ">
                 <QuestionMarkCircleIcon width={24} height={24} />
               </a>
             </div>
@@ -237,51 +232,13 @@ const Home: NextPage = () => {
           <aside className="flex-none flex flex-col justify-between w-56 bg-trueGray-800">
             <div className="overflow-y-auto">
               <div className="mt-4 mb-5">
-                <button className="group flex items-center w-full mb-1 text-trueGray-400 hover:text-trueGray-200">
-                  <ChevronDownIcon width={20} height={20} />
-                  <h3 className="text-xs font-semibold tracking-wide uppercase">
-                    general
-                  </h3>
-                </button>
-                <ul className="px-2">
-                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 group-hover:text-trueGray-200">
-                        welcome
-                      </span>
-                    </a>
-                  </li>
-                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 group-hover:text-trueGray-200">
-                        faq
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mt-4 mb-5">
-                <div className="group flex justify-between items-center pr-2 text-trueGray-400 cursor-pointer">
+                <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
                   <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
                     <ChevronDownIcon width={16} height={16} />
                     <h3 className="text-xs font-semibold tracking-wide uppercase">
-                      JavaScript
+                      general
                     </h3>
                   </button>
-
                   <button
                     className="hover:text-trueGray-200"
                     aria-label="チャンネルを作成"
@@ -290,43 +247,129 @@ const Home: NextPage = () => {
                   </button>
                 </div>
                 <ul className="px-2">
-                  <li className="group px-2 py-1 text-trueGray-400 bg-trueGray-700 rounded">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 text-trueGray-100">random</span>
-                    </a>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750 cursor-pointer">
+                    <div className="flex justify-between items-center">
+                      <a href="#" className="flex items-center gap-x-1.5">
+                        <HashtagIcon
+                          className="text-trueGray-500"
+                          width={24}
+                          height={24}
+                          aria-label="公開チャンネル"
+                        />
+                        <span>welcome</span>
+                      </a>
+                      <div className="hidden gap-x-1 group-hover:flex">
+                        <button aria-label="招待を作成">
+                          <UserAddIcon width={16} height={16} />
+                        </button>
+                        <button aria-label="チャンネルの編集">
+                          <CogIcon width={16} height={16} />
+                        </button>
+                      </div>
+                    </div>
                   </li>
-                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 group-hover:text-trueGray-200">
-                        core-dev
-                      </span>
-                    </a>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750 cursor-pointer">
+                    <div className="flex justify-between items-center">
+                      <a href="#" className="flex items-center gap-x-1.5">
+                        <HashtagIcon
+                          className="text-trueGray-500"
+                          width={24}
+                          height={24}
+                          aria-label="公開チャンネル"
+                        />
+                        <span>faq</span>
+                      </a>
+                      <div className="hidden gap-x-1 group-hover:flex">
+                        <button aria-label="招待を作成">
+                          <UserAddIcon width={16} height={16} />
+                        </button>
+                        <button aria-label="チャンネルの編集">
+                          <CogIcon width={16} height={16} />
+                        </button>
+                      </div>
+                    </div>
                   </li>
+                </ul>
+              </div>
 
-                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750">
-                    <a href="#" className="flex items-center">
-                      <HashtagIcon
-                        className="text-trueGray-500"
-                        width={24}
-                        height={24}
-                        aria-label="公開チャンネル"
-                      />
-                      <span className="ml-2 group-hover:text-trueGray-200">
-                        course
-                      </span>
-                    </a>
+              <div className="mt-4 mb-5">
+                <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
+                  <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
+                    <ChevronDownIcon width={16} height={16} />
+                    <h3 className="text-xs font-semibold tracking-wide uppercase">
+                      JavaScript
+                    </h3>
+                  </button>
+                  <button
+                    className="hover:text-trueGray-200"
+                    aria-label="チャンネルを作成"
+                  >
+                    <PlusIcon width={18} height={18} />
+                  </button>
+                </div>
+                <ul className="px-2">
+                  <li className="group px-2 py-1 text-trueGray-400 bg-trueGray-700 rounded cursor-pointer">
+                    <div className="flex justify-between items-center">
+                      <a href="#" className="flex items-center gap-x-1.5">
+                        <HashtagIcon
+                          className="text-trueGray-500"
+                          width={24}
+                          height={24}
+                          aria-label="公開チャンネル"
+                        />
+                        <span className="text-trueGray-100">random</span>
+                      </a>
+                      <div className="flex gap-x-1">
+                        <button aria-label="招待を作成">
+                          <UserAddIcon width={16} height={16} />
+                        </button>
+                        <button aria-label="チャンネルの編集">
+                          <CogIcon width={16} height={16} />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750 cursor-pointer">
+                    <div className="flex justify-between items-center">
+                      <a href="#" className="flex items-center gap-x-1.5">
+                        <HashtagIcon
+                          className="text-trueGray-500"
+                          width={24}
+                          height={24}
+                          aria-label="公開チャンネル"
+                        />
+                        <span>nextjs</span>
+                      </a>
+                      <div className="hidden gap-x-1 group-hover:flex">
+                        <button aria-label="招待を作成">
+                          <UserAddIcon width={16} height={16} />
+                        </button>
+                        <button aria-label="チャンネルの編集">
+                          <CogIcon width={16} height={16} />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="group px-2 py-1 text-trueGray-400 rounded hover:bg-trueGray-750 cursor-pointer">
+                    <div className="flex justify-between items-center">
+                      <a href="#" className="flex items-center gap-x-1.5">
+                        <HashtagIcon
+                          className="text-trueGray-500"
+                          width={24}
+                          height={24}
+                          aria-label="公開チャンネル"
+                        />
+                        <span>react</span>
+                      </a>
+                      <div className="hidden gap-x-1 group-hover:flex">
+                        <button aria-label="招待を作成">
+                          <UserAddIcon width={16} height={16} />
+                        </button>
+                        <button aria-label="チャンネルの編集">
+                          <CogIcon width={16} height={16} />
+                        </button>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -335,7 +378,7 @@ const Home: NextPage = () => {
               className="flex justify-between items-center px-2 py-2 bg-trueGray-850"
               aria-label="ユーザーエリア"
             >
-              <div className="flex items-center">
+              <div className="flex items-center gap-x-1.5">
                 <button>
                   <section aria-label="miyashita、 オンライン">
                     <Image
@@ -347,7 +390,7 @@ const Home: NextPage = () => {
                     />
                   </section>
                 </button>
-                <div className="ml-2">
+                <div>
                   <div className="text-sm font-semibold text-white">
                     miyashita
                   </div>
@@ -359,27 +402,19 @@ const Home: NextPage = () => {
                   className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
                   aria-label="ミュート"
                 >
-                  <MicrophoneIcon
-                    className="mx-auto rounded-full"
-                    width={18}
-                    height={18}
-                  />
+                  <MicrophoneIcon width={18} height={18} />
                 </button>
                 <button
                   className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
                   aria-label="スピーカーミュート"
                 >
-                  <IconHeadphones className="mx-auto rounded-full" size={20} />
+                  <IconHeadphones size={20} />
                 </button>
                 <button
                   className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
                   aria-label="ユーザー設定"
                 >
-                  <CogIcon
-                    className="mx-auto rounded-full"
-                    width={20}
-                    height={20}
-                  />
+                  <CogIcon width={20} height={20} />
                 </button>
               </div>
             </section>
