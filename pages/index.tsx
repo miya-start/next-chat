@@ -4,8 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   ChevronDownIcon,
+  CogIcon,
   ColorSwatchIcon,
   InboxIcon,
+  MicrophoneIcon,
   PuzzleIcon,
   QuestionMarkCircleIcon,
   UsersIcon,
@@ -16,7 +18,13 @@ import {
   PlusIcon,
   SearchIcon,
 } from '@heroicons/react/outline'
-import { IconBellOff, IconBellRinging, IconPin } from '@tabler/icons'
+import {
+  IconBellOff,
+  IconBellRinging,
+  IconCardboards,
+  IconHeadphones,
+  IconPin,
+} from '@tabler/icons'
 
 const Home: NextPage = () => {
   return (
@@ -278,7 +286,58 @@ const Home: NextPage = () => {
                 </ul>
               </div>
             </div>
-            <div className="bg-trueGray-500">Bottom</div>
+            <section
+              className="flex justify-between items-center px-2 py-2 bg-trueGray-850"
+              aria-label="ユーザーエリア"
+            >
+              <div className="flex items-center">
+                <button>
+                  <div aria-label="miyashita、 オンライン">
+                    <Image
+                      className="rounded-full"
+                      src="/crop.jpg"
+                      alt="avatar"
+                      width={32}
+                      height={32}
+                    />
+                  </div>
+                </button>
+                <div className="ml-2">
+                  <div className="text-sm font-semibold text-white">
+                    miyashita
+                  </div>
+                  <div className="text-xs font-medium text-gray-400">#1429</div>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-400">
+                <button
+                  className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
+                  aria-label="ミュート"
+                >
+                  <MicrophoneIcon
+                    className="mx-auto rounded-full"
+                    width={18}
+                    height={18}
+                  />
+                </button>
+                <button
+                  className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
+                  aria-label="スピーカーミュート"
+                >
+                  <IconHeadphones className="mx-auto rounded-full" size={20} />
+                </button>
+                <button
+                  className="px-1 py-2 rounded hover:text-gray-300 hover:bg-trueGray-750"
+                  aria-label="ユーザー設定"
+                >
+                  <CogIcon
+                    className="mx-auto rounded-full"
+                    width={20}
+                    height={20}
+                  />
+                </button>
+              </div>
+            </section>
           </aside>
           <div className="flex-1 flex justify-between">
             <main
