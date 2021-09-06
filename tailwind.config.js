@@ -12,6 +12,9 @@ module.exports = {
         'trueGray-750': '#353535',
         'trueGray-850': '#1f1f1f',
       },
+      transitionProperty: {
+        width: 'width',
+      },
     },
   },
   variants: {

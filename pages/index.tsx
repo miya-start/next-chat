@@ -211,10 +211,9 @@ const Home: NextPage = () => {
               </button>
               <form className="relative ml-4" role="search">
                 <input
-                  className="px-2 py-1 text-sm text-trueGray-200 bg-trueGray-900 rounded "
+                  className="w-36 px-2 py-1 text-sm text-trueGray-200 bg-trueGray-900 rounded transition-width focus:w-60 focus:outline-none"
                   type="search"
                   placeholder="検索"
-                  size={20}
                   aria-label="検索"
                 />
                 <span className="absolute top-1 right-0 mr-1">
