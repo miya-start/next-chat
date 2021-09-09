@@ -6,11 +6,12 @@ import {
   ChevronDownIcon,
   CogIcon,
   ColorSwatchIcon,
+  HomeIcon,
   InboxIcon,
   MicrophoneIcon,
-  PuzzleIcon,
   QuestionMarkCircleIcon,
   UserAddIcon,
+  UserCircleIcon,
   UsersIcon,
 } from '@heroicons/react/solid'
 import {
@@ -49,7 +50,7 @@ const Home: NextPage = () => {
                 className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-indigo-500 group-hover:rounded-2xl"
                 aria-label="ホーム"
               >
-                <PuzzleIcon
+                <HomeIcon
                   className="mx-auto rounded-full"
                   width={32}
                   height={32}
@@ -169,7 +170,7 @@ const Home: NextPage = () => {
           </ul>
         </div>
       </nav>
-      <div className="flex flex-col min-h-screen h-screen">
+      <div className="flex-1 flex flex-col min-h-screen h-screen">
         <section
           className="flex h-12 text-white"
           aria-label="チャンネルのヘッダー"
@@ -380,7 +381,7 @@ const Home: NextPage = () => {
             >
               <div className="flex items-center gap-x-1.5">
                 <button>
-                  <section aria-label="miyashita、 オンライン">
+                  <section aria-label="miya-start、 オンライン">
                     <Image
                       className="rounded-full"
                       src="/crop.jpg"
@@ -392,7 +393,7 @@ const Home: NextPage = () => {
                 </button>
                 <div>
                   <div className="text-sm font-semibold text-white">
-                    miyashita
+                    miya-start
                   </div>
                   <div className="text-xs font-medium text-gray-400">#1429</div>
                 </div>
@@ -424,157 +425,219 @@ const Home: NextPage = () => {
               className="flex-1 bg-trueGray-750 flex flex-col justify-between"
               aria-label="random (チャンネル)"
             >
-              <div className="overflow-y-auto">
-                Display chat contents Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Quod aliquid suscipit labore vero quisquam?
-                Dolorem quibusdam labore debitis, itaque eveniet quam natus
-                exercitationem cum eum, cupiditate harum. Incidunt, natus
-                adipisci eaque officia error, maxime minus tenetur excepturi
-                neque ipsam eum perferendis iure nostrum earum unde iusto ipsum.
-                Earum facilis qui nostrum quas odio repudiandae, quos
-                perspiciatis amet repellat tenetur culpa quidem, accusamus
-                illum. Laudantium deleniti mollitia illo, deserunt libero cum
-                atque aliquid ratione corrupti beatae eos fugit laborum
-                temporibus fugiat itaque nulla reprehenderit perferendis magnam
-                unde optio nemo! Neque libero culpa nihil blanditiis, laborum
-                eveniet dolorem cupiditate, temporibus cumque nesciunt eligendi
-                optio! Cumque eligendi architecto sit voluptates nemo, illum
-                corrupti fuga alias? Veritatis ipsam optio amet explicabo autem
-                nihil! Eos vel reprehenderit culpa voluptas in reiciendis quod
-                quidem et quos unde! Sit dignissimos neque provident tenetur
-                repudiandae ipsa minima ducimus eos esse? Consequatur
-                accusantium dicta, dolores ipsum corporis iusto voluptate
-                laborum, maiores iste similique tempora magni quibusdam quasi
-                animi, repudiandae accusamus nisi vero praesentium id! Possimus
-                earum ratione eius molestias, soluta odit accusamus, nihil quas
-                vitae voluptatibus cumque! Maxime accusantium provident aut
-                corrupti. Odio, itaque fugiat doloremque dicta iure ea ducimus
-                voluptate voluptates, cupiditate ad minus nisi error delectus
-                quaerat sit et modi tempora? Totam repudiandae voluptatibus vero
-                reiciendis earum architecto sunt aliquid rem. Excepturi
-                quibusdam sunt mollitia tempore. Ad, laborum saepe rem mollitia
-                ipsa nostrum vitae ea id non dolorum repellendus quos culpa
-                minima voluptas! Voluptate ducimus maxime corporis debitis
-                eligendi consequuntur quo enim nihil consectetur velit eos
-                excepturi vitae, incidunt perferendis nisi iure, facilis non
-                consequatur libero reprehenderit alias illo porro repellat
-                voluptatum? Atque architecto explicabo aliquam est et nulla hic
-                veritatis quasi corrupti facilis, corporis quidem quae ullam
-                odit sit sint pariatur molestias temporibus. Vitae esse
-                voluptates itaque, laboriosam tempora vel laudantium
-                exercitationem cum laborum totam quia doloremque placeat sequi,
-                ut nobis tenetur aperiam quisquam? Assumenda beatae eveniet
-                quisquam, facere est similique vero aspernatur quia quod
-                repellat magnam soluta modi aliquam aliquid asperiores cumque!
-                Aut, quo! Itaque, hic iure tempore rerum quia quis delectus
-                consequatur possimus fugiat distinctio, repudiandae eligendi
-                quibusdam corporis molestiae quidem eius iste, assumenda
-                repellat a aliquam labore. Error quo fuga, obcaecati ipsam
-                officiis tempora nisi necessitatibus, deserunt voluptas libero
-                maiores perspiciatis iure ea cum vero numquam nulla magnam
-                expedita aperiam neque at hic, optio ullam. Aut rem ratione
-                harum. Vitae distinctio odit ea fugiat. Ab, voluptates
-                consequatur. Tempora quidem consequuntur, facilis voluptatibus
-                excepturi sint reprehenderit facere, officia delectus rem, ipsa
-                at quisquam. Tempora reprehenderit consequuntur sit provident
-                doloremque laboriosam sed fugiat, eum laudantium! Cum blanditiis
-                explicabo esse odio ex voluptates fugiat quaerat, obcaecati,
-                numquam ipsa sequi, tempore hic qui odit animi eum quod. Quaerat
-                vitae doloribus maiores in sequi corrupti at. Voluptatibus
-                laborum est, ab voluptate eos quo perferendis nesciunt, quia
-                eveniet quod, deleniti blanditiis ullam illum. In ut suscipit
-                dignissimos veniam doloribus eum deleniti atque amet architecto
-                ullam vero corrupti quis nihil tenetur qui porro dolor, quos
-                debitis ipsam beatae incidunt deserunt pariatur! Illo
-                voluptatibus placeat ipsa doloribus quia velit, in animi
-                exercitationem dignissimos odit atque cumque, architecto totam
-                corporis? Cum similique tempora dolor maiores quibusdam vitae
-                corporis voluptas hic minus nesciunt velit iste ipsam,
-                blanditiis iure laborum! Esse, facilis at placeat voluptatibus
-                repellat, adipisci accusantium maxime maiores asperiores
-                repellendus dolorem? Architecto, corporis, in voluptatum
-                asperiores accusantium incidunt reiciendis id optio a dolore,
-                veniam iusto earum. Eveniet qui ipsa ad nostrum sit harum, sunt
-                aspernatur totam eos, blanditiis vero tempora? Provident cum
-                perspiciatis architecto voluptate voluptatem molestias hic
-                voluptas, deserunt sit repellendus odit doloremque voluptatibus,
-                nulla eius excepturi! Voluptas rerum animi blanditiis quas
-                commodi cumque quia recusandae deleniti numquam qui sint
-                accusamus mollitia magni deserunt, et est tempore reprehenderit
-                tempora. Ipsum quisquam voluptates accusamus amet voluptas atque
-                quas suscipit, eaque doloribus obcaecati consequuntur aliquid.
-                Distinctio odit ea id provident impedit vitae dolorum
-                accusantium est sunt error nam, consequuntur veritatis modi
-                officia dolore reprehenderit tempore. Ex aliquam velit amet
-                tempora ea veritatis eaque error quod aperiam expedita ut cumque
-                dicta eum pariatur minima deleniti odit, odio quibusdam
-                repudiandae itaque excepturi distinctio fugit fuga doloribus.
-                Deserunt, sapiente! Perspiciatis quisquam voluptatem, suscipit
-                consequatur illum dolorum animi doloremque facere tempore
-                aspernatur autem, tenetur ab modi quis error ea. Praesentium
-                tenetur, dolorum numquam sed non tempora cum maxime perferendis
-                veniam dolorem ab ipsum architecto autem ut enim. Deserunt non
-                corporis adipisci voluptates vel ab, ratione explicabo quis sint
-                unde, ipsum voluptas nesciunt ullam veniam, perferendis
-                excepturi minima! Repudiandae eos alias aut, aliquam vel animi
-                deleniti unde molestiae minus officiis et facere, vitae expedita
-                reprehenderit autem quasi voluptatibus quisquam? Fugit molestias
-                accusamus, quod atque qui soluta voluptas, aspernatur provident
-                non necessitatibus veniam blanditiis totam nobis assumenda
-                ducimus similique sapiente at eos voluptatem sed, dolore alias
-                iusto. In similique expedita delectus quidem sit debitis minus
-                reiciendis quisquam repudiandae tenetur, error excepturi fugit
-                vitae sunt molestias natus doloribus, qui dolorum nostrum
-                tempora aliquam ratione! Consequatur quos repellendus error sed
-                optio rerum tempore modi libero ratione doloremque earum
-                quisquam itaque voluptatum repellat voluptas blanditiis alias
-                doloribus, officia autem numquam. Nihil eveniet reiciendis,
-                repudiandae vitae eius doloribus qui veniam, voluptates nulla
-                optio in placeat dolore esse quos neque perferendis
-                exercitationem repellat veritatis at molestias. Deserunt
-                voluptate expedita rem pariatur autem. Quia, ad molestiae!
-                Reprehenderit sapiente impedit voluptates cumque, omnis
-                molestias id, neque, rem tempore in modi perspiciatis
-                accusantium? Pariatur nihil amet ipsa. Suscipit doloremque
-                temporibus, assumenda vero quos, commodi officiis minima dolorem
-                libero placeat optio? Porro at exercitationem illum vel animi
-                dolorum magni id ipsum incidunt libero consectetur qui optio
-                amet numquam, quod quo, repellendus quas eaque eveniet fugiat
-                nostrum, eligendi magnam minima. Sit culpa molestiae esse,
-                molestias eos dolorem sunt reprehenderit laboriosam nihil sequi
-                libero qui explicabo facere illum nobis, quos praesentium nam
-                asperiores atque. Amet quaerat itaque nostrum aut ullam
-                perspiciatis pariatur ab! Unde natus tempora cum aliquid numquam
-                vitae blanditiis nulla iste laudantium eos, modi animi.
-                Blanditiis, possimus. Rerum repellendus neque animi ex
-                blanditiis mollitia alias cupiditate deleniti eaque optio rem
-                dignissimos possimus impedit odit, expedita nesciunt
-                necessitatibus distinctio ratione laborum magnam, eos ipsum
-                nobis? Voluptatibus unde hic nemo, expedita nobis corrupti
-                impedit, dolor quas soluta quis, itaque error quidem eos
-                repellat nisi dolorem iure magni reiciendis animi veritatis?
-                Culpa optio, rerum placeat blanditiis commodi dolores dolorem
-                eaque maiores. Sed blanditiis ipsum debitis odio, veritatis
-                ullam nulla? Quos dolorum ducimus molestiae quod quis officia
-                quidem assumenda obcaecati sunt et minus laudantium soluta culpa
-                vel molestias doloremque velit expedita, non nam eligendi, cum,
-                esse natus quasi maiores! Similique sequi quaerat sit aspernatur
-                maxime modi quibusdam, quos dolorem nesciunt, accusantium ipsam
-                corporis harum non assumenda. Quia enim, dignissimos ea fuga
-                repudiandae numquam! Atque, nam saepe facilis et nihil aperiam
-                fuga dolores quis maiores, facere praesentium vero ipsum quam
-                officiis delectus sunt, tenetur quos sed qui commodi. Ad maxime
-                exercitationem sunt tenetur ea esse rerum iusto pariatur
-                architecto in aut voluptatem, quos dicta sapiente unde quis
-                eveniet eligendi facere obcaecati voluptate accusantium. Fugiat
-                blanditiis est error quis dicta vero doloribus nobis voluptate
-                ratione dolorem quia, esse molestiae illo nihil temporibus velit
-                labore sequi dolor nulla modi repellendus! Provident, ab?
-                Reiciendis nemo vitae ipsa, maxime fuga velit quisquam magni. A
-                vitae error dolorum tempora. Doloremque quod praesentium et
-                doloribus. Aut, cupiditate fugit alias ut quaerat eveniet natus
-                harum voluptatibus cum molestias earum obcaecati.
+              <div className="overflow-y-auto text-gray-300">
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'miya-start'}のアイコン`}>
+                      <Image
+                        className="rounded-full"
+                        src="/crop.jpg"
+                        alt="avatar"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        miya-start
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>親譲りの無鉄砲で小供の時から損ばかりしている。</div>
+                      <div>
+                        小学校に居る時分学校の二階から飛び降りて一週間程腰を抜かした事がある。
+                      </div>
+                      <div>
+                        なぜそんな無闇（むやみ）をしたと聞く人があるかもしれぬ。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'test-user'}のアイコン`}>
+                      <UserCircleIcon
+                        className="text-green-400 bg-white rounded-full"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        test-user
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.{' '}
+                      </div>
+                      <div>
+                        Quod aliquid suscipit labore vero quisquam? Dolorem
+                        quibusdam labore debitis, itaque eveniet quam natus
+                        exercitationem cum eum, cupiditate harum.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'miya-start'}のアイコン`}>
+                      <Image
+                        className="rounded-full"
+                        src="/crop.jpg"
+                        alt="avatar"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        miya-start
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>親譲りの無鉄砲で小供の時から損ばかりしている。</div>
+                      <div>
+                        小学校に居る時分学校の二階から飛び降りて一週間程腰を抜かした事がある。
+                      </div>
+                      <div>
+                        なぜそんな無闇（むやみ）をしたと聞く人があるかもしれぬ。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'test-user'}のアイコン`}>
+                      <UserCircleIcon
+                        className="text-green-400 bg-white rounded-full"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        test-user
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.{' '}
+                      </div>
+                      <div>
+                        Quod aliquid suscipit labore vero quisquam? Dolorem
+                        quibusdam labore debitis, itaque eveniet quam natus
+                        exercitationem cum eum, cupiditate harum.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'miya-start'}のアイコン`}>
+                      <Image
+                        className="rounded-full"
+                        src="/crop.jpg"
+                        alt="avatar"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        miya-start
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>親譲りの無鉄砲で小供の時から損ばかりしている。</div>
+                      <div>
+                        小学校に居る時分学校の二階から飛び降りて一週間程腰を抜かした事がある。
+                      </div>
+                      <div>
+                        なぜそんな無闇（むやみ）をしたと聞く人があるかもしれぬ。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
+                  <div className="flex-none">
+                    <button aria-label={`${'test-user'}のアイコン`}>
+                      <UserCircleIcon
+                        className="text-green-400 bg-white rounded-full"
+                        width={32}
+                        height={32}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="#" className="text-white hover:underline">
+                        test-user
+                      </a>
+                      <time
+                        className="ml-2 text-xs text-gray-400"
+                        dateTime="2021-08-10T10:25:28.914Z"
+                      >
+                        2021/08/10
+                      </time>
+                    </div>
+                    <div>
+                      <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.{' '}
+                      </div>
+                      <div>
+                        Quod aliquid suscipit labore vero quisquam? Dolorem
+                        quibusdam labore debitis, itaque eveniet quam natus
+                        exercitationem cum eum, cupiditate harum.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div className="bg-trueGray-700">Chat input here</div>
             </main>
 
