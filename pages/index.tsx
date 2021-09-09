@@ -3,12 +3,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
+  AtSymbolIcon,
   ChevronDownIcon,
   CogIcon,
   ColorSwatchIcon,
+  EmojiHappyIcon,
   HomeIcon,
   InboxIcon,
   MicrophoneIcon,
+  PlusCircleIcon,
   QuestionMarkCircleIcon,
   UserAddIcon,
   UserCircleIcon,
@@ -638,7 +641,36 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <div className="bg-trueGray-700">Chat input here</div>
+              <div className="flex items-center h-24 mx-3">
+                <button
+                  className="h-11 px-3 py-2 text-trueGray-300 bg-trueGray-700 rounded-l-xl hover:text-trueGray-100"
+                  aria-label="ファイルをアップロードする"
+                >
+                  <PlusCircleIcon width={24} height={24} />
+                </button>
+                <div className="flex-1">
+                  <input
+                    className="w-full h-11 p-2 text-trueGray-200 bg-trueGray-700 focus:outline-none"
+                    type="text"
+                    placeholder={`#${'random'}へメッセージを送信`}
+                    aria-label={`#${'random'}へメッセージを送信`}
+                  />
+                </div>
+                <div className="flex gap-2 items-center h-11 px-3 py-2 bg-trueGray-700 rounded-r-xl">
+                  <button
+                    className="text-trueGray-300 bg-trueGray-700 hover:text-trueGray-100"
+                    aria-label="メンバーに話しかける"
+                  >
+                    <AtSymbolIcon width={24} height={24} />
+                  </button>
+                  <button
+                    className="text-trueGray-300 bg-trueGray-700 hover:text-yellow-300"
+                    aria-label="絵文字を選択"
+                  >
+                    <EmojiHappyIcon width={24} height={24} />
+                  </button>
+                </div>
+              </div>
             </main>
 
             <div className="bg-trueGray-800 w-56 flex-none overflow-y-auto">
