@@ -673,31 +673,68 @@ const Home: NextPage = () => {
               </div>
             </main>
 
-            <div className="bg-trueGray-800 w-56 flex-none overflow-y-auto">
-              Users sidebar Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Officiis consectetur quod natus facere sapiente, maiores
-              omnis, eaque nobis rerum nesciunt culpa odio nulla commodi
-              delectus laudantium ipsa incidunt iusto unde totam eos doloribus?
-              Consequuntur quos nam nulla cumque sapiente aperiam tenetur alias
-              totam, impedit nisi quia tempora, itaque sed atque dolor esse aut
-              illo magni ab eaque illum fuga numquam sit. Repudiandae molestias
-              deserunt ratione. Numquam odit modi quia sint excepturi laudantium
-              deleniti beatae corporis autem aut aliquid et quas, debitis, id
-              vero nihil architecto quod eum, impedit repellat ipsam aperiam. Et
-              numquam impedit modi eos libero? Ut quibusdam culpa voluptates
-              ratione. Voluptates iure exercitationem, at praesentium quidem
-              provident maxime tempora repudiandae delectus. Dolores distinctio
-              nihil quisquam, incidunt praesentium et ad, explicabo quasi a sit
-              perspiciatis sequi voluptatum molestiae quam nam culpa inventore
-              esse hic recusandae saepe cumque quis odit vero! Sed officiis,
-              necessitatibus explicabo voluptatum amet voluptatem deserunt unde
-              inventore. Possimus, ab qui nihil molestiae architecto quia
-              temporibus, ipsam beatae ratione ducimus magni autem aliquid
-              vitae, neque dignissimos quisquam maiores dicta et! Tenetur quo
-              eum deleniti beatae debitis cupiditate quod ducimus voluptas porro
-              mollitia? Odio ad saepe labore consectetur, nemo quas est? Fuga
-              consequuntur pariatur sequi veniam impedit rerum?
-            </div>
+            <aside
+              className="flex-none w-56 p-3 overflow-y-auto bg-trueGray-800"
+              aria-label={`${'random'}チャンネルのメンバーリスト`}
+            >
+              <h2
+                className="text-xs font-semibold tracking-wide text-trueGray-400 uppercase"
+                aria-label={`スタッフ、${1}人のメンバー`}
+              >
+                スタッフ — 1
+              </h2>
+              <ul className="mb-6">
+                <li>
+                  <button
+                    className="flex items-center gap-x-2 w-full px-2 py-1 my-1.5 text-trueGray-400 rounded hover:text-trueGray-200 hover:bg-trueGray-750"
+                    aria-label={`${'miya-start'}、退席中`}
+                  >
+                    <Image
+                      className="rounded-full"
+                      src="/crop.jpg"
+                      alt="avatar"
+                      width={32}
+                      height={32}
+                    />
+                    <span className="font-medium">miya-start</span>
+                  </button>
+                </li>
+              </ul>
+              <h2
+                className="text-xs font-semibold tracking-wide text-trueGray-400 uppercase"
+                aria-label={`オンライン、${2}人のメンバー`}
+              >
+                オンライン — 2
+              </h2>
+              <ul className="mb-6">
+                <li>
+                  <button
+                    className="flex items-center gap-x-2 w-full px-2 py-1 my-1.5 text-trueGray-400 rounded hover:text-trueGray-200 hover:bg-trueGray-750"
+                    aria-label={`${'test-user'}、オンライン`}
+                  >
+                    <UserCircleIcon
+                      className="text-green-400 bg-white rounded-full"
+                      width={32}
+                      height={32}
+                    />
+                    <span className="font-medium">test-user</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="flex items-center gap-x-2 w-full px-2 py-1 my-1.5 text-trueGray-400 rounded hover:text-trueGray-200 hover:bg-trueGray-750"
+                    aria-label={`${'ダンボールめがね'}、オンライン`}
+                  >
+                    <IconCardboards
+                      className="text-white bg-purple-400 rounded-full"
+                      width={32}
+                      height={32}
+                    />
+                    <span className="font-medium">ダンボールめがね</span>
+                  </button>
+                </li>
+              </ul>
+            </aside>
           </div>
         </div>
       </div>
