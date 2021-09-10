@@ -8,3 +8,20 @@
       'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   }
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-1;
+  }
+  .scrollbar:hover::-webkit-scrollbar-thumb {
+    @apply bg-trueGray-600;
+    @apply rounded-lg;
+  }
+  .scrollbar-main::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .scrollbar-main:hover::-webkit-scrollbar-thumb {
+    @apply bg-trueGray-500;
+    @apply rounded-lg;
+  }
+}

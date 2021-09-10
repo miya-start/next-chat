@@ -234,9 +234,9 @@ const Home: NextPage = () => {
         </section>
         <div className="flex-1 flex overflow-y-hidden">
           <aside className="flex-none flex flex-col justify-between w-56 bg-trueGray-800">
-            <div className="overflow-y-auto">
+            <div className="scrollbar mt-1 mr-1 overflow-y-auto">
               <div className="mt-4 mb-5">
-                <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
+                <div className="group flex justify-between items-center pr-3 text-trueGray-400 cursor-pointer">
                   <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
                     <ChevronDownIcon width={16} height={16} />
                     <h2 className="text-xs font-semibold tracking-wide uppercase">
@@ -297,7 +297,7 @@ const Home: NextPage = () => {
               </div>
 
               <div className="mt-4 mb-5">
-                <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
+                <div className="group flex justify-between items-center pr-3 text-trueGray-400 cursor-pointer">
                   <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
                     <ChevronDownIcon width={16} height={16} />
                     <h2 className="text-xs font-semibold tracking-wide uppercase">
@@ -428,7 +428,7 @@ const Home: NextPage = () => {
               className="flex-1 bg-trueGray-750 flex flex-col justify-between"
               aria-label="random (チャンネル)"
             >
-              <div className="overflow-y-auto text-gray-300">
+              <div className="scrollbar-main mt-1 mr-1 overflow-y-auto text-gray-300">
                 <div className="flex gap-5 py-4 mx-4 my-3 border-t border-trueGray-700">
                   <div className="flex-none">
                     <button aria-label={`${'miya-start'}のアイコン`}>
@@ -674,14 +674,14 @@ const Home: NextPage = () => {
             </main>
 
             <aside
-              className="flex-none w-56 p-3 overflow-y-auto bg-trueGray-800"
+              className="scrollbar flex-none w-56 p-3 overflow-y-auto bg-trueGray-800"
               aria-label={`${'random'}チャンネルのメンバーリスト`}
             >
               <h2
                 className="text-xs font-semibold tracking-wide text-trueGray-400 uppercase"
-                aria-label={`スタッフ、${1}人のメンバー`}
+                aria-label={`Core Team、${1}人のメンバー`}
               >
-                スタッフ — 1
+                Core Team — 1
               </h2>
               <ul className="mb-6">
                 <li>
@@ -723,14 +723,14 @@ const Home: NextPage = () => {
                 <li>
                   <button
                     className="flex items-center gap-x-2 w-full px-2 py-1 my-1.5 text-trueGray-400 rounded hover:text-trueGray-200 hover:bg-trueGray-750"
-                    aria-label={`${'ダンボールめがね'}、オンライン`}
+                    aria-label={`${'めがね'}、オンライン`}
                   >
                     <IconCardboards
                       className="text-white bg-purple-400 rounded-full"
                       width={32}
                       height={32}
                     />
-                    <span className="font-medium">ダンボールめがね</span>
+                    <span className="font-medium">めがね</span>
                   </button>
                 </li>
               </ul>
