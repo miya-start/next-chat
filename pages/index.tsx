@@ -174,12 +174,9 @@ const Home: NextPage = () => {
         </div>
       </nav>
       <div className="flex-1 flex flex-col min-h-screen h-screen">
-        <section
-          className="flex h-12 text-white"
-          aria-label="チャンネルのヘッダー"
-        >
+        <section className="flex h-12 text-white" aria-label="チャンネル一覧">
           <div className="flex-none flex justify-between items-center w-56 px-3 py-2 bg-trueGray-800 border-b border-trueGray-900">
-            <div>JavaScript</div>
+            <h1>JavaScript</h1>
             <span>
               <ChevronDownIcon width={20} height={20} />
             </span>
@@ -187,8 +184,11 @@ const Home: NextPage = () => {
           <div className="flex-1 flex justify-between items-center px-4 bg-trueGray-750 border-b border-trueGray-900">
             <div className="flex items-center gap-x-2">
               <div className="text-2xl text-trueGray-500">#</div>
-              <div className="text-sm">random</div>
-              <div className="pl-2 text-xs text-trueGray-400 border-l border-trueGray-400 ">
+              <h3 className="text-sm">random</h3>
+              <div
+                className="pl-2 text-xs text-trueGray-400 border-l border-trueGray-400"
+                id="channel-description"
+              >
                 JavaScriptに関する雑談
               </div>
             </div>
@@ -239,9 +239,9 @@ const Home: NextPage = () => {
                 <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
                   <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
                     <ChevronDownIcon width={16} height={16} />
-                    <h3 className="text-xs font-semibold tracking-wide uppercase">
+                    <h2 className="text-xs font-semibold tracking-wide uppercase">
                       general
-                    </h3>
+                    </h2>
                   </button>
                   <button
                     className="hover:text-trueGray-200"
@@ -300,9 +300,9 @@ const Home: NextPage = () => {
                 <div className="group flex justify-between items-center pr-4 text-trueGray-400 cursor-pointer">
                   <button className="group flex items-center w-full mb-1 group-hover:text-trueGray-200">
                     <ChevronDownIcon width={16} height={16} />
-                    <h3 className="text-xs font-semibold tracking-wide uppercase">
+                    <h2 className="text-xs font-semibold tracking-wide uppercase">
                       JavaScript
-                    </h3>
+                    </h2>
                   </button>
                   <button
                     className="hover:text-trueGray-200"
