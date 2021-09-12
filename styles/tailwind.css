@@ -9,7 +9,7 @@
   }
 }
 
-@layer utilities {
+@layer components {
   .scrollbar::-webkit-scrollbar {
     @apply w-1;
   }
