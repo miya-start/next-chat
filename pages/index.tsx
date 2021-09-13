@@ -383,16 +383,18 @@ const Home: NextPage = () => {
               aria-label="ユーザーエリア"
             >
               <div className="flex items-center gap-x-1.5">
-                <button>
-                  <section aria-label="miya-start、 オンライン">
-                    <Image
-                      className="rounded-full"
-                      src="/crop.jpg"
-                      alt="avatar"
-                      width={32}
-                      height={32}
-                    />
-                  </section>
+                <button
+                  className="relative hover:opacity-80"
+                  aria-label="miya-start、 オンライン"
+                >
+                  <Image
+                    className="rounded-full"
+                    src="/crop.jpg"
+                    alt="avatar"
+                    width={32}
+                    height={32}
+                  />
+                  <i className="absolute -right-1 bottom-0 w-4 h-4 bg-sky-600 border-trueGray-850 border-2 rounded-full"></i>
                 </button>
                 <div>
                   <div className="text-sm font-semibold text-white">

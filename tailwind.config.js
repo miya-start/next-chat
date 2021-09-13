@@ -1,4 +1,4 @@
-const { teal, trueGray } = require('tailwindcss/colors')
+const { sky, teal, trueGray } = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        sky,
         teal,
         trueGray,
         'trueGray-750': '#353535',
