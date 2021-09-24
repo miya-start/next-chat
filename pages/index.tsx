@@ -6,9 +6,7 @@ import {
   AtSymbolIcon,
   ChevronDownIcon,
   CogIcon,
-  ColorSwatchIcon,
   EmojiHappyIcon,
-  HomeIcon,
   InboxIcon,
   MicrophoneIcon,
   PlusCircleIcon,
@@ -18,10 +16,12 @@ import {
   UsersIcon,
 } from '@heroicons/react/solid'
 import {
+  ChatAlt2Icon,
   DownloadIcon,
   HashtagIcon,
   PlusIcon,
   SearchIcon,
+  BookmarkIcon,
 } from '@heroicons/react/outline'
 import {
   IconBellOff,
@@ -43,65 +43,7 @@ const Home: NextPage = () => {
         aria-label="サイドバー"
       >
         <div className="overflow-y-auto text-sm">
-          <ul className="text-center">
-            <li className="group relative cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150"></span>
-              </div>
-              <a
-                href="#"
-                className="flex justify-center items-center mx-auto w-12 h-12 text-trueGray-200 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-indigo-500 group-hover:rounded-2xl"
-                aria-label="ホーム"
-              >
-                <HomeIcon
-                  className="mx-auto rounded-full"
-                  width={32}
-                  height={32}
-                />
-              </a>
-            </li>
-          </ul>
-          <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
-          <ul aria-label="サーバー">
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a
-                className="flex justify-center items-center"
-                href="#"
-                aria-label="テストサーバー1"
-              >
-                <Image
-                  className="rounded-full transition-all ease-linear group-hover:rounded-2xl"
-                  src="/dan-asaki-wC_YNVgIRdA-unsplash.jpg"
-                  alt="ホーム"
-                  width={48}
-                  height={48}
-                />
-              </a>
-            </li>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a href="#" aria-label="テストサーバー2">
-                <ColorSwatchIcon
-                  className="mx-auto text-yellow-500 rounded-full transition-all ease-linear group-hover:rounded-2xl"
-                  width={48}
-                  height={48}
-                />
-              </a>
-            </li>
+          <ul aria-label="機能の一覧">
             <li className="group relative mt-3 cursor-pointer">
               <div
                 className="absolute top-0 left-0 flex items-center w-2 h-12"
@@ -109,17 +51,56 @@ const Home: NextPage = () => {
               >
                 <span className="w-2 h-10 -ml-1 bg-white rounded"></span>
               </div>
-              <a
-                className="flex justify-center items-center"
-                href="#"
-                aria-label="テストサーバー3"
-              >
-                <Image
-                  className="rounded-2xl"
-                  src="/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67.png"
-                  alt="JavaScript"
+              <a href="#" aria-label="チャンネル">
+                <ChatAlt2Icon
+                  className="mx-auto text-gray-100"
                   width={48}
                   height={48}
+                />
+              </a>
+            </li>
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
+              <a href="#" aria-label="検索">
+                <SearchIcon
+                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
+              <a href="#" aria-label="ブックマーク">
+                <BookmarkIcon
+                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                  width={44}
+                  height={44}
+                />
+              </a>
+            </li>
+            <li className="group relative mt-3 cursor-pointer">
+              <div
+                className="absolute top-0 left-0 flex items-center w-2 h-12"
+                aria-hidden="true"
+              >
+                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+              </div>
+              <a href="#" aria-label="ダイレクトメッセージ">
+                <UsersIcon
+                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                  width={44}
+                  height={44}
                 />
               </a>
             </li>
@@ -187,7 +168,7 @@ const Home: NextPage = () => {
             <ChevronDownIcon width={20} height={20} />
           </span>
         </div>
-        <div className="grid content-between w-56 bg-trueGray-800">
+        <div className="grid content-between w-56 overflow-y-hidden bg-trueGray-800">
           <div className="scrollbar mt-1 mr-1 overflow-y-auto">
             <div className="mt-4 mb-5">
               <div className="group flex justify-between items-center pr-3 text-trueGray-400 cursor-pointer">
