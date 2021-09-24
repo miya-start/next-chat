@@ -39,127 +39,100 @@ const Home: NextPage = () => {
       </Head>
 
       <nav
-        className="grid content-between min-h-screen h-screen w-20 py-2 bg-trueGray-900"
+        className="grid content-between h-screen min-h-screen w-20 py-2 overflow-y-auto text-sm bg-trueGray-900"
         aria-label="サイドバー"
       >
-        <div className="overflow-y-auto text-sm">
-          <ul aria-label="機能の一覧">
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-10 -ml-1 bg-white rounded"></span>
-              </div>
-              <a href="#" aria-label="チャンネル">
-                <ChatAlt2Icon
-                  className="mx-auto text-gray-100"
-                  width={48}
-                  height={48}
-                />
-              </a>
-            </li>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a href="#" aria-label="検索">
-                <SearchIcon
-                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
-                  width={44}
-                  height={44}
-                />
-              </a>
-            </li>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a href="#" aria-label="ブックマーク">
-                <BookmarkIcon
-                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
-                  width={44}
-                  height={44}
-                />
-              </a>
-            </li>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a href="#" aria-label="ダイレクトメッセージ">
-                <UsersIcon
-                  className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
-                  width={44}
-                  height={44}
-                />
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
-                href="#"
-                aria-label="サーバーを追加"
-              >
-                <PlusIcon width={24} height={24} />
-              </a>
-            </li>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
-                href="#"
-                aria-label="公開サーバーを探す"
-              >
-                <SearchIcon width={24} height={24} />
-              </a>
-            </li>
-          </ul>
-          <hr className="mx-4 mt-3 border-b border-trueGray-700"></hr>
-          <ul>
-            <li className="group relative mt-3 cursor-pointer">
-              <div
-                className="absolute top-0 left-0 flex items-center w-2 h-12"
-                aria-hidden="true"
-              >
-                <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
-              </div>
-              <a
-                className="flex justify-center items-center mx-auto w-12 h-12 text-teal-500 bg-trueGray-800 rounded-full transition-all ease-linear group-hover:text-white group-hover:bg-teal-500 group-hover:rounded-2xl"
-                href="#"
-                aria-label="アプリをダウンロード"
-              >
-                <DownloadIcon width={24} height={24} />
-              </a>
-            </li>
-          </ul>
+        <ul aria-label="機能の一覧">
+          <li className="group relative mt-3 cursor-pointer">
+            <div
+              className="absolute top-0 left-0 flex items-center w-2 h-12"
+              aria-hidden="true"
+            >
+              <span className="w-2 h-10 -ml-1 bg-white rounded"></span>
+            </div>
+            <a href="#" aria-label="チャンネル">
+              <ChatAlt2Icon
+                className="mx-auto text-gray-100"
+                width={48}
+                height={48}
+              />
+            </a>
+          </li>
+          <li className="group relative mt-3 cursor-pointer">
+            <div
+              className="absolute top-0 left-0 flex items-center w-2 h-12"
+              aria-hidden="true"
+            >
+              <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+            </div>
+            <a href="#" aria-label="検索">
+              <SearchIcon
+                className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                width={44}
+                height={44}
+              />
+            </a>
+          </li>
+          <li className="group relative mt-3 cursor-pointer">
+            <div
+              className="absolute top-0 left-0 flex items-center w-2 h-12"
+              aria-hidden="true"
+            >
+              <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+            </div>
+            <a href="#" aria-label="ブックマーク">
+              <BookmarkIcon
+                className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                width={44}
+                height={44}
+              />
+            </a>
+          </li>
+          <li className="group relative mt-3 cursor-pointer">
+            <div
+              className="absolute top-0 left-0 flex items-center w-2 h-12"
+              aria-hidden="true"
+            >
+              <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+            </div>
+            <a href="#" aria-label="ダイレクトメッセージ">
+              <UsersIcon
+                className="mx-auto text-gray-400 ease-out group-hover:text-white group-hover:scale-105 group-hover:duration-300"
+                width={44}
+                height={44}
+              />
+            </a>
+          </li>
+        </ul>
+
+        <div className="group relative mt-6 cursor-pointer">
+          <div
+            className="absolute top-0 left-0 flex items-center w-2 h-12"
+            aria-hidden="true"
+          >
+            <span className="w-2 h-4 -ml-1 rounded transition-transform group-hover:bg-white group-hover:scale-y-150 group-hover:duration-300"></span>
+          </div>
+          <button
+            className="flex justify-center items-center w-full"
+            aria-label="ユーザー設定"
+          >
+            <Image
+              className="rounded-full transition-transform ease-out group-hover:rounded-2xl group-hover:scale-105 group-hover:duration-300"
+              src="/crop.jpg"
+              alt={`${'miya-start'}のアイコン`}
+              width={48}
+              height={48}
+            />
+            <i
+              className="absolute right-3 bottom-0 w-4 h-4 bg-sky-600 border-trueGray-850 border-2 rounded-full"
+              aria-hidden="true"
+            ></i>
+          </button>
         </div>
       </nav>
 
       <nav
-        className="grid grid-rows-[3rem,1fr] min-h-screen h-screen"
+        className="grid grid-rows-[3rem,1fr] h-screen min-h-screen"
         aria-label="チャンネル一覧"
       >
         <div className="flex justify-between items-center px-3 py-2 text-white bg-trueGray-800 border-b border-trueGray-900">
@@ -361,7 +334,7 @@ const Home: NextPage = () => {
           </section>
         </div>
       </nav>
-      <div className="grid grid-rows-[3rem,1fr] min-h-screen h-screen">
+      <div className="grid grid-rows-[3rem,1fr] h-screen min-h-screen">
         <header
           className="grid grid-cols-[1fr,auto] px-4 text-white bg-trueGray-750 border-b border-trueGray-900"
           aria-label="チャンネルのヘッダー"
